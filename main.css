@@ -1,25 +1,28 @@
+/*TAGS*/
 body {
+  --main-blue-color: #4285F4;
+  --main-red-color: #f44242;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
+  color: #5a5a5a;
 }
 
 footer {
   position: fixed;
   bottom: 0;
-  width: 100%;
+  left: 0;
+  right: 0;
   background-color: #f2f2f2;
   border-top: 1px solid #e4e4e4;
+  padding: 10px;
 }
 
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: inline;
-}
-
-li {
-  display: inline;
+  display: flex;
+  justify-content: space-between;
 }
 
 a {
@@ -31,10 +34,124 @@ a:hover {
   text-decoration: underline;
 }
 
-#btn-sign-in {
-  background-color: #4285f4;
-  color: white;
-  font-weight: bolder;
-  border: none;
-  padding: 10px;
+/*NAVBAR*/
+.navbar-link {
+/* //TODO
+-fix spacing
+*/
+}
+
+.navbar-link-btn {
+/* //TODO
+-add background color
+-change to white text
+*/
+background-color: var(--main-blue-color);
+color: white;
+font-weight: bold;
+padding: 8px 15px;
+border-radius: 2px;
+}
+
+.navbar-link-btn:hover {
+  text-decoration: none;
+}
+
+.navbar-link-btn:active {
+/* //TODO
+-darken background
+*/
+}
+
+.navbar-link-img {
+/* //TODO
+-align vertically with text items
+-lighten color when not hovered
+*/
+max-height: 30px;
+opacity: 75%;
+}
+
+.navbar-link-img:hover {
+opacity: 100%;
+}
+
+/*MAIN AREA*/
+.main-content {
+/* //TODO
+-center in screen horizontally
+*/
+margin-top: 100px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.logo-img {
+}
+
+.full-search-bar {
+/* //TODO
+-rounded border
+*/
+border: 1px solid #a1a0a0;
+border-radius: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.full-search-bar:hover {
+  /* //TODO
+  -border shadow
+  */
+  }
+
+.search-bar {
+/* //TODO
+-remove 'border'
+*/
+}
+
+.search-bar-img {
+/* //TODO
+-fix sizing
+*/
+max-height: 30px;
+}
+
+.search-btn-group {
+}
+
+.search-btn {
+/* //TODO
+-lighten text
+-remove border
+*/
+}
+
+.search-btn:hover {
+/* //TODO
+-black text
+-shadow
+*/
+}
+
+.search-btn:active {
+/* //TODO
+-blue border
+*/
+}
+
+/*FOOTER*/
+.footer-link {
+/* //TODO 
+-lighten text
+-fix spacing 
+*/
+}
+
+.footer-link:active {
+  color: var(--main-red-color);
 }

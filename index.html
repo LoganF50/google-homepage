@@ -8,52 +8,49 @@
   <title>Google</title>
 </head>
 <body>
-  <header>
+  <navbar>
     <ul>
-      <li style="float: left;">
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Store</a></li>
-        </ul>
+      <li>
+        <a class="navbar-link" href="#">About</a>
+        <a class="navbar-link" href="#">Store</a>
       </li>
-      <li style="float: right;">
-        <ul>
-          <li><a href="#">Gmail</a></li>
-          <li><a href="#">Images</a></li>
-          <li><a href="#"><img src="./images/google-apps.png" alt="google apps"></a></li>
-          <li><button id="btn-sign-in">Sign in</button></li>
-        </ul>
+      <li>
+        <a class="navbar-link" href="#">Gmail</a>
+        <a class="navbar-link" href="#">Images</a>
+        <a class="navbar-link" href="#"><img class="navbar-link-img" src="./images/google-apps.png" alt="google apps"></a>
+        <a class="navbar-link-btn" href="#">Sign in</a>
       </li>
     </ul>
-  </header>
+  </navbar>
 
-  <main>
-    <img src="./images/google-logo.png" alt="google logo">
-    <div>
-      <img src="./images/google-mag-glass.png" alt="magnifying glass">
-      <input type="text" name="" id="">
-      <a href="#"><img src="./images/google-mic.png" alt="microphone"></a>
-    </div>
-  </main>
+  <div class="main-content">
+    <img class="logo-img" src="./images/google-logo.png" alt="google logo">
+    <form action="submit">
+      <div class="full-search-bar">
+        <img class="search-bar-img" src="./images/google-mag-glass.png" alt="magnifying glass">
+        <input class="search-bar" type="text" name="search-bar" id="search-bar">
+        <a href="#"><img class="search-bar-img" src="./images/google-mic.png" alt="microphone"></a>
+      </div>
+      <div class="search-btn-group">
+        <button class="search-btn" type="submit">Google Search</button>
+        <button class="search-btn" type="submit">I'm Feeling Lucky</button>
+      </div>
+    </form>
+  </div>
 
   <footer>
-  <ul>
-    <li style="float: left;">
-      <ul>
-        <li><a href="#">Advertising</a></li>
-        <li><a href="#">Business</a></li>
-        <li><a href="#">How Search Works</a></li>
-      </ul>
-    </li>
-    <li style="float: right;">
-      <ul>
-        <li><a href="#">Privacy</a></li>
-        <li><a href="#">Terms</a></li>
-        <li><a href="#">Settings</a></li>
-      </ul>
-    </li>
-  </ul>
+    <ul>
+      <li>
+        <a class="footer-link" href="#">Advertising</a>
+        <a class="footer-link" href="#">Business</a>
+        <a class="footer-link" href="#">How Search works</a>
+      </li>
+      <li>
+        <a class="footer-link" href="#">Privacy</a>
+        <a class="footer-link" href="#">Terms</a>
+        <a class="footer-link" href="#">Settings</a>
+      </li>
+    </ul>
   </footer>
-  <script src="script.js"></script>
 </body>
 </html>
