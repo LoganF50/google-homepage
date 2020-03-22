@@ -1,9 +1,10 @@
 /*TAGS*/
 body {
   --main-blue-color: #4285F4;
+  --main-blue-dark-color: rgb(47, 97, 179);
   --main-red-color: #f44242;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
+  font-size: 13px;
   color: #5a5a5a;
 }
 
@@ -13,16 +14,17 @@ footer {
   left: 0;
   right: 0;
   background-color: #f2f2f2;
-  border-top: 1px solid #e4e4e4;
+  border-top: 1px solid #d6d3d3;
   padding: 10px;
 }
 
-ul {
+ul, ul li {
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 a {
@@ -36,21 +38,17 @@ a:hover {
 
 /*NAVBAR*/
 .navbar-link {
-/* //TODO
--fix spacing
-*/
+  padding: 5px 5px;
+  margin: 0 5px;
 }
 
 .navbar-link-btn {
-/* //TODO
--add background color
--change to white text
-*/
-background-color: var(--main-blue-color);
-color: white;
-font-weight: bold;
-padding: 8px 15px;
-border-radius: 2px;
+  background-color: var(--main-blue-color);
+  color: white;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 2px;
+  margin: 10px;
 }
 
 .navbar-link-btn:hover {
@@ -58,98 +56,84 @@ border-radius: 2px;
 }
 
 .navbar-link-btn:active {
-/* //TODO
--darken background
-*/
+  background: var(--main-blue-dark-color);
 }
 
 .navbar-link-img {
-/* //TODO
--align vertically with text items
--lighten color when not hovered
-*/
-max-height: 30px;
-opacity: 75%;
+  max-height: 30px;
+  opacity: 75%;
 }
 
 .navbar-link-img:hover {
-opacity: 100%;
+  opacity: 100%;
 }
 
 /*MAIN AREA*/
 .main-content {
-/* //TODO
--center in screen horizontally
-*/
-margin-top: 100px;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo-img {
 }
 
 .full-search-bar {
-/* //TODO
--rounded border
-*/
-border: 1px solid #a1a0a0;
-border-radius: 30px;
-display: flex;
-justify-content: center;
-align-items: center;
+  border: 1px solid #d6d3d3;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 15px;
+  margin: 15px;
 }
 
 .full-search-bar:hover {
-  /* //TODO
-  -border shadow
-  */
-  }
+  box-shadow: 1px 1px 1px 1px #d6d3d3;
+}
 
 .search-bar {
-/* //TODO
--remove 'border'
-*/
+  margin: 0 10px;
+  min-width: 350px;
+  border: none;
 }
 
 .search-bar-img {
-/* //TODO
--fix sizing
-*/
-max-height: 30px;
+  max-height: 25px;
 }
 
 .search-btn-group {
+  display: flex;
+  justify-content: center;
 }
 
 .search-btn {
-/* //TODO
--lighten text
--remove border
-*/
+  background-color: #f2f2f2;
+  border: none;
+  padding: 10px 15px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  margin: 10px;
 }
 
 .search-btn:hover {
-/* //TODO
--black text
--shadow
-*/
+  color: black;
+  box-shadow: 1px 1px #d6d3d3;
+  border: 1px solid #d6d3d3;
+  
 }
 
 .search-btn:active {
-/* //TODO
--blue border
-*/
+  border: 1px solid var(--main-blue-color);
 }
 
 /*FOOTER*/
 .footer-link {
-/* //TODO 
--lighten text
--fix spacing 
-*/
+  padding: 7px 8px;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .footer-link:active {
